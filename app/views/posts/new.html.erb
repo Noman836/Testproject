@@ -1,0 +1,10 @@
+<h1>New post</h1>
+<div class="col-md-6 col-lg-4 offset-lg-4 offset-md-3 mt-5">
+  <div class="bg-light p-5 border shadow">
+    <%= render "form", post: @post %>
+    <br>
+    <div>
+    <%= link_to "Back to posts", posts_path,class: "btn btn-primary w-100 my-3 shadow" %>
+    </div>
+  </div>
+</div>

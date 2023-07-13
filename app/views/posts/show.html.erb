@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+<p class="text-center fs-1 fw-bolder">Post Details</p>
+<div class="col-md-6 col-lg-4 offset-lg-4 offset-md-3 mt-5">
+  <div class="bg-light p-5 border shadow">
+    <%= render @post %>
+      <%= link_to "Edit this post", edit_post_path(@post), class: "btn btn-success w-30 my-3 shadow" %>
+      <%= link_to "Back to posts", posts_path, class: "btn btn-success w-30 my-3 shadow" %>
+      <%= button_to "Destroy this post", @post, method: :delete, class: "btn btn-primary w-100 my-3 shadow" %>
+   </div>
+  </div>
+</div>

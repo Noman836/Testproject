@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+<h1 class="text-center fs-1 fw-bolder" >Posts</h1>
+<div class="col-md-6 col-lg-4 offset-lg-4 offset-md-3 mt-5">
+   <div class="bg-light p-5 border shadow">
+<div id="posts">
+  <% @posts.each do |post| %>
+    <%= render post %>
+    <p>
+      <%= link_to "Show this post", post, class: "btn btn-primary w-100 my-3 shadow" %>
+    </p>
+  <% end %>
+</div>
+<%= link_to "New post", new_post_path, class: "btn btn-primary w-100 my-3 shadow" %>
+ </div>
+</div>
